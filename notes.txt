@@ -1,0 +1,17 @@
+Multiprocessing and multithreading both are ways to achieve multitasking 
+
+Threads live within the same process
+threads will share the same virtual memory - but have their own stack, instruction pointer
+
+Process can create multiple threads within it
+It has its own address space
+Benefits of multiprocessing is that error or memory leak in one process wont hurt execution
+of another process
+
+
+Use process locks to manage R/W or I/O of shared resources between processes
+
+Usually a process runs on a single core that the OS chooses/
+Through multiprocessing pool, we can utilize all cores and parallelize our program
+the act of dividing inputs for each core => MAP
+the act of aggregating the outputs back from each core => REDUCE
